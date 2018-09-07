@@ -8,20 +8,8 @@
     <artifactId>Spring4-Hibernate</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <!-- 设置Maven工程的编译版本为1.8,默认为1.5-->
     <build>
-
-        <resources>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
-                </includes>
-            </resource>
-        </resources>
-
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -149,16 +137,7 @@
             <artifactId>spring-tx</artifactId>
             <version>4.0.0.RELEASE</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>4.0.0.RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>4.0.0.RELEASE</version>
-        </dependency>
+
 
         <!--<dependency>
             <groupId>net.sourceforge.cglib</groupId>
@@ -226,6 +205,18 @@
             <groupId>org.jboss.javaee</groupId>
             <artifactId>jboss-transaction-api</artifactId>
             <version>1.0.1.GA</version>
+        </dependency>
+
+        <!-- Spring在Web应用中需要导入的包 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>4.0.0.RELEASE</version>
         </dependency>
 
     </dependencies>
